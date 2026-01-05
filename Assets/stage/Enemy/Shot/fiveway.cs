@@ -40,21 +40,21 @@ public class fiveway : MonoBehaviour
             Vector2 vec_3 = vec + new Vector2(1f,1);
             Vector2 vec_4 = vec + new Vector2(-1f,1);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec * speed;
+            rb.linearVelocity = vec * speed;
                 bullet = Instantiate(bulletObj,gameObject.transform.position - new Vector3(-0.5f,0) ,Quaternion.identity);
             rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec_1 * speed;
+            rb.linearVelocity = vec_1 * speed;
                 bullet = Instantiate(bulletObj,gameObject.transform.position - new Vector3(0.5f,0),Quaternion.identity);
             rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec_2 * speed;
+            rb.linearVelocity = vec_2 * speed;
 
             bullet = Instantiate(bulletObj,gameObject.transform.position - new Vector3(-1f,0),Quaternion.identity);
             rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec_3 * speed;
+            rb.linearVelocity = vec_3 * speed;
 
             bullet = Instantiate(bulletObj,gameObject.transform.position - new Vector3(1f,0),Quaternion.identity);
             rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec_4 * speed;
+            rb.linearVelocity = vec_4 * speed;
         }
         /*if(count>2){
             count = 0;
