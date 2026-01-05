@@ -104,7 +104,7 @@ public class playerMove : MonoBehaviour
         
         */
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.velocity = _velocity * move_speed;
+        rb.linearVelocity = _velocity * move_speed;
         if (gameObject.activeSelf == false){
             _velocity = new Vector2(0,0);
         }

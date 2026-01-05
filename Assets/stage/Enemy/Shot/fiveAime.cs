@@ -34,13 +34,13 @@ public class fiveAime : MonoBehaviour
             Vector2 vec_1 = vec + new Vector2(1.5f,0);
             Vector2 vec_2 = vec + new Vector2(-1.5f,0);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec * speed;
+            rb.linearVelocity = vec * speed;
                 bullet = Instantiate(Aim_E_bullet,gameObject.transform.position,Quaternion.identity);
             rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec_1 * speed;
+            rb.linearVelocity = vec_1 * speed;
                 bullet = Instantiate(Aim_E_bullet,gameObject.transform.position,Quaternion.identity);
             rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = vec_2 * speed;
+            rb.linearVelocity = vec_2 * speed;
         }
         if(count>5){
             count = 0;

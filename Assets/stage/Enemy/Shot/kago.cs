@@ -54,10 +54,10 @@ public class kago : MonoBehaviour
         {
             var bullet = Instantiate(bulletObj,gameObject.transform.position,Quaternion.identity);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = new Vector2(target.x + 1.5f + changeX,target.y);
+            rb.linearVelocity = new Vector2(target.x + 1.5f + changeX,target.y);
              bullet = Instantiate(bulletObj,gameObject.transform.position,Quaternion.identity);
             rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = new Vector2(target.x - 1.5f + changeX,target.y);
+            rb.linearVelocity = new Vector2(target.x - 1.5f + changeX,target.y);
         }
         if(timer >= endtime )
         {

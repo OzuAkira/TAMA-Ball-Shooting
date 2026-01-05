@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "gst_local-main.sln"
+    "dotnet.defaultSolution": "TAMA-Ball-Shooting.slnx"
 }
